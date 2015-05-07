@@ -16,6 +16,8 @@ import sys
 import os
 import sqlite3
 import datetime
+
+# OSX에서 동작할 수 있도록 추가
 if sys.platform != 'win32' and sys.platform != 'darwin':
   from pyvirtualdisplay import Display
 
@@ -231,10 +233,13 @@ def group_member(cur, group):
 username = args.username
 password = args.password
 
+# OSX에서 동작할 수 있도록 추가
 if sys.platform != 'win32' and sys.platform != 'darwin' :
 	display = Display(visible=0, size=(1600, 900))
 	display.start()
+
 driver = webdriver.Firefox()
+
 cookies = dict()
 cookies = facebook_login(username,password)
 
