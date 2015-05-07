@@ -7,7 +7,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 from StringIO import StringIO
 from colorama import init
 from colorama import Fore, Back, Style
-from pyvirtualdisplay import Display
 import lxml.html
 import time
 import re
@@ -17,6 +16,8 @@ import sys
 import os
 import sqlite3
 import datetime
+if sys.platform != 'win32' and sys.platform != 'darwin':
+  from pyvirtualdisplay import Display
 
 init(autoreset=True)
 
@@ -230,8 +231,9 @@ def group_member(cur, group):
 username = args.username
 password = args.password
 
-display = Display(visible=0, size=(1600, 900))
-display.start()
+if sys.platform != 'win32' and sys.platform != 'darwin' :
+	display = Display(visible=0, size=(1600, 900))
+	display.start()
 driver = webdriver.Firefox()
 cookies = dict()
 cookies = facebook_login(username,password)
