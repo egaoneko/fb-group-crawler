@@ -21,7 +21,7 @@ import datetime
 init(autoreset=True)
 
 print "-----------------------------------------------------------------------------"
-print "          Facebook group crawler - by Doghyun Seo"
+print "          Facebook group crawler"
 print "-----------------------------------------------------------------------------"
 print "Examples:"
 print "1. Generates Group Member List:"
