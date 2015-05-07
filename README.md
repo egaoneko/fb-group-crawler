@@ -2,7 +2,7 @@
 
 ##Facebook Group Crawler
 
-[참조](https://github.com/prili/fb-hfc)를 참조하여 작성하였습니다.
+[fb-hfc](https://github.com/prili/fb-hfc)를 참조하여 작성하였습니다.
 우분투 및 OSX 에서만 작동하는 것을 확인했습니다.
 
 ## 설치
