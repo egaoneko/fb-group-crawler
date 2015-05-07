@@ -3,16 +3,16 @@
 ##Facebook Group Crawler
 
 [참조](https://github.com/prili/fb-hfc)를 참조하여 작성하였습니다.
-우분투에서만 작동하는 것을 확인했습니다.
+우분투 및 OSX 에서만 작동하는 것을 확인했습니다.
 
-## 설치:
+## 설치
 
 ``` bash
 apt-get install python-lxml
 pip install -r requirements.txt
 ```
 
-## 실행 :
+## 실행
 
 ### 직접 실행
 
@@ -57,3 +57,7 @@ password: Facebook PW
 	name=url=id
 
 와 같이 작성하면 됩니다.
+
+## 한계
+
+멤버수가 8000~9000명인 그룹의 경우 데이터가 정확하지 않으며, 9000명이상인 그룹에서는 그 이상의 데이터를 가져올 수가 없습니다.

@@ -1,0 +1,10 @@
+[          Group Name] : 생활코딩
+[           Group URL] : codingeverybody
+[            Group Id] : 174499879257223
+[          Start Time] : Thu May  7 13:39:54 2015
+[            End Time] : Thu May  7 13:49:59 2015
+[        Elapsed Time] : (0, 0, 10, 5)
+[      Params Results] : 8213, 8213, 8213
+[            Data Len] : 8213
+[             Success] : 8213
+--------------------------------------------------------------------------------
